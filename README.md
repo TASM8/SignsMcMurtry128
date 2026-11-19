@@ -67,6 +67,10 @@ I was loosing my mind with that code, it inserts a variable or expression into a
 
 As you know it is an internal identifier.
 
+Connecting the database servers were also a huge pain for me, I really struggled with that. 
+
+I had to play around with the code, come things were defininetly easy to know what to put, but there were others that I had to look up because I was so confused on what I was doing wrong. 
+
 
 # CRUD Starter
 **CISW 128 — Talamantes**
