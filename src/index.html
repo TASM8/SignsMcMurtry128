@@ -3,18 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Items</title>
+  <title>The Adventure's Handbook</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>DnD Beginner's Guide</h1>
+  <h1>The Adventurer's Handbook</h1>
+
+  <p>
+    Welcome to The Adventurer's Handbook!
+    Organize topics to help you learn the basics of Dungeons and Dragons.
+  </p>
 
   <div class="add-box">
-    <input type="text" id="title-input" placeholder="Type a new item...">
+    
+    
+    <label for="title-input">Topic Name:</label>
+    <input type="text" id="title-input" placeholder="Type a new D&D topic...">
+
+    <!--Category field-->
+    <label for="category-input">Category:</label>
+    <select id="category-input">
+      <option value="">Choose a category</option>
+      <option value="Game Basics">Game Basics</option>
+      <option value="Character Creation">Character Creation</option>
+      <option value="Gameplay">Gameplay</option>
+    </select>
+
+    
     <button onclick="addItem()">Add</button>
   </div>
 
+  
   <ul id="item-list"></ul>
+
+  
 
   <script src="app.js"></script>
 </body>
