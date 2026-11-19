@@ -8,7 +8,7 @@ const db = getDatabase();
 export default async function handler(req) {
   const data = await req.json();
 
-  await db.sql`UPDATE items SET title = ${data.title} WHERE id = ${data.id}`;
+  await db.sql`UPDATE items SET title = ${data.title}, category = ${data.category} WHERE id = ${data.id}`;
 
   return Response.json({ message: "Item updated" });
 }

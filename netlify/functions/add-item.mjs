@@ -8,7 +8,7 @@ const db = getDatabase();
 export default async function handler(req) {
   const data = await req.json();
 
-  await db.sql`INSERT INTO items (title) VALUES (${data.title})`;
+  await db.sql`INSERT INTO items (title, category) VALUES (${data.title}, ${data.category})`;
 
   return Response.json({ message: "Item added" });
 }

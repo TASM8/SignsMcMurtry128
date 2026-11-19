@@ -20,6 +20,7 @@ async function loadItems() {
     list.innerHTML += `
       <li>
         <span>${item.title}</span>
+        <span> - ${item.category}</span>
         <button onclick="editItem(${item.id})">Edit</button>
         <button onclick="deleteItem(${item.id})">Delete</button>
       </li>
@@ -31,34 +32,45 @@ async function loadItems() {
 // CREATE: add a new item using the text in the input box
 async function addItem() {
   const input = document.getElementById("title-input");
-  const title = input.value;
+  const categoryInput = document.getElementById("category-input");
 
-  if (title === "") {
-    alert("Please type something first!");
+  const title = input.value;
+  const category = categoryInput.value;
+
+
+  if (title === "" || category === "") {
+    alert("Please enter a topic and choose a category!");
     return;
   }
 
   await fetch("/api/add-item", {
     method: "POST",
-    body: JSON.stringify({ title: title }),
+    body: JSON.stringify({ title: title, category: category }),
   });
 
   input.value = "";
+  categoryInput.value ="";
   loadItems();
 }
 
 
 // UPDATE: ask for a new title, then save it
 async function editItem(id) {
-  const newTitle = prompt("Enter the new title:");
+  const newTitle = prompt("Enter the new topic name:");
 
   if (newTitle === null || newTitle === "") {
     return;
   }
 
+  const newCategory = prompt("Enter the category (Game Basics, Character Creation, or Gameplay):");
+
+  if (newCategory === null || newCategory.trim() === "") {
+    return;
+  }
+
   await fetch("/api/update-item", {
     method: "POST",
-    body: JSON.stringify({ id: id, title: newTitle }),
+    body: JSON.stringify({ id: id, title: newTitle.trim(), category: newCategory.trim() }),
   });
 
   loadItems();
