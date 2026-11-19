@@ -1,5 +1,8 @@
 // CREATE: adds a new item to the database.
 // The browser calls this at /api/add-item and sends { title: "..." }
+//Added to the await section because I needed to add category to the equation. 
+
+
 
 import { getDatabase } from "@netlify/database";
 

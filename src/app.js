@@ -16,10 +16,12 @@ async function loadItems() {
   const list = document.getElementById("item-list");
   list.innerHTML = "";
 
+//<span> does not create a new line, like <div> does, but only takes of the needed space
+
   for (const item of items) {
     list.innerHTML += `
-      <li>
-        <span>${item.title}</span>
+      <li> 
+        <span>${item.title}</span> 
         <span> - ${item.category}</span>
         <button onclick="editItem(${item.id})">Edit</button>
         <button onclick="deleteItem(${item.id})">Delete</button>
@@ -30,6 +32,8 @@ async function loadItems() {
 
 
 // CREATE: add a new item using the text in the input box
+// Added the category input, to have the user put their list in a category
+
 async function addItem() {
   const input = document.getElementById("title-input");
   const categoryInput = document.getElementById("category-input");
@@ -37,6 +41,7 @@ async function addItem() {
   const title = input.value;
   const category = categoryInput.value;
 
+// Allows the user to enter in whatever they desire as their title
 
   if (title === "" || category === "") {
     alert("Please enter a topic and choose a category!");
@@ -54,7 +59,9 @@ async function addItem() {
 }
 
 
-// UPDATE: ask for a new title, then save it
+// UPDATE: ask for a new title, then save it, also added category, needed that.
+// This section was tricky because I had not added .tim() to the category, just
+// Copied the newTitle section. News flash, did not work
 async function editItem(id) {
   const newTitle = prompt("Enter the new topic name:");
 

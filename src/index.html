@@ -20,7 +20,7 @@
     <label for="title-input">Topic Name:</label>
     <input type="text" id="title-input" placeholder="Type a new D&D topic...">
 
-    <!--Category field-->
+    <!--Category field, added this to create a new label and section to spiff up the project-->
     <label for="category-input">Category:</label>
     <select id="category-input">
       <option value="">Choose a category</option>
@@ -30,14 +30,18 @@
     </select>
 
     
-    <button onclick="addItem()">Add</button>
+    <button onclick="addItem()">Add</button> <!--Gives a nice little button to use-->
   </div>
 
   
   <ul id="item-list"></ul>
 
   
-
+  
+    <footer id="adventureFooter">
+        <p>© 2026 The Adventurer's Handbook</p>
+    </footer>
+    
   <script src="app.js"></script>
 </body>
 </html>

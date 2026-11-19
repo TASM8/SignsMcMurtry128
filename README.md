@@ -1,3 +1,30 @@
+# The Adventurer's Handbook
+
+## About my project
+
+The Adventurer's Handbook is a beginner-friendly D&D topic library.
+I created this to help new players who are nervous about playing D&D.
+
+I simplified it a bit from my plan because I realized that I was going to go way over
+my head, so I have made pretty good modifications, but much more simple.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # CRUD Starter
 **CISW 128 — Talamantes**
 

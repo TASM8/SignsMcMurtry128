@@ -1,5 +1,6 @@
 // UPDATE: changes the title of one item.
 // The browser calls this at /api/update-item and sends { id: 5, title: "..." }
+// Again I had to add category because it was not there, this section about killed me good grief.
 
 import { getDatabase } from "@netlify/database";
 
