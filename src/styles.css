@@ -127,27 +127,6 @@ li {
   border: 2px solid #b89450;
 }
 
-/* For Phone Screens, I liked how I did this for my website I launched, wanted to add it here */
-
-@media (max-width: 600px) {
-  body {
-    margin: 20 px auto;
-    padding: 0 12px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  .add-box {
-    padding: 16px;
-  }
-
-  button {
-    margin-top: 4px;
-  }
-}
-
 footer {
   font-family: Georgia, serif;
   color: #f4c76b;

@@ -17,13 +17,15 @@ async function loadItems() {
   list.innerHTML = "";
 
 //<span> does not create a new line, like <div> does, but only takes of the needed space
+// ${item.id} <------- That function, I hate it. The amount of times I typed it incorrectly
+//is not funny. Holy crap, hate it!
 
   for (const item of items) {
     list.innerHTML += `
       <li> 
         <span>${item.title}</span> 
         <span> - ${item.category}</span>
-        <button onclick="editItem(${item.id})">Edit</button>
+        <button onclick="editItem(${item.id})">Edit</button> 
         <button onclick="deleteItem(${item.id})">Delete</button>
       </li>
     `;

@@ -1,4 +1,17 @@
-# The Adventurer's Handbook
+# Taylor Signs-McMurtry
+# CISW 128 Web App Development
+# Final Project
+
+
+## Note From Taylor
+
+Before I go into detail what I made, this final.... was not my favorite.
+It may have been better if I was in Database, but I have not taken that class in 
+3 years. So, did I think I was going to have an brain aneurysm? Yes. 
+Is part of that my fault because I need to complete this class early? Yes. 
+I sat at my computer for too long, but I appreciate your willingness to grade this, thank you, I really do appreciate it!
+
+## The Adventurer's Handbook
 
 ## About my project
 
@@ -8,21 +21,51 @@ I created this to help new players who are nervous about playing D&D.
 I simplified it a bit from my plan because I realized that I was going to go way over
 my head, so I have made pretty good modifications, but much more simple.
 
+I used the CRUD starter, I made changes to customize project. I added a category 
+box, and updated the database and use JavaScript.
 
+## Features
 
+- Topic changed to D&D 
+- View and save topic with categories
+- Able to edit existing topics and categories 
+- Delete feature
+- Save information to the database
 
+## Categories
 
+- Game Basics
+- Character Creation
+- Gameplay
 
+## Tools Used
 
+- HTML
+- CSS
+- JavaScript
+- Netlify
+- SQL Database
 
+## Custom Changes
 
+I changed the layout to dark green to give it a more of a fantasy feeling.
+The box is supposed to look like parchment, like in 'ye olden days. 
+With a nice brown button.
 
+The user is also able to name their topic whatever they want to lable it, and then
+they have 3 catergories to select from. 
 
+Also the user is able to edit and delete the catergories they list.
 
+## Issues
 
+My mine is a lot of typos, mostly not putting the character in the right place. 
 
+## ${item.id} <------- That is my enemy. I kept putting the $ inside the {}, ridiculous
 
+I was loosing my mind with that code, it inserts a variable or expression into a string.
 
+As you know it is an internal identifier.
 
 
 # CRUD Starter
