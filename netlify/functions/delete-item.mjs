@@ -13,4 +13,6 @@ export default async function handler(req) {
   return Response.json({ message: "Item deleted" });
 }
 
-export const config = { path: "/api/delete-item" };
+export const config = { path: "/api/delete-item" }; //This confused me a little bit, but
+//this is to export a constant? I think that sounds right. It was hard, even watching videos
+//it is still confusing. 
