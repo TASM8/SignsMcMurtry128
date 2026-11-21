@@ -131,3 +131,27 @@ footer {
   font-family: Georgia, serif;
   color: #f4c76b;
 }
+
+/* Mobile Friendly, I already added this and then deleted it, looked at rubric and realized I needed it. */
+
+@media (max-width: 600px) {
+  body {
+    margin: 20px auto;
+    padding: 0 12px
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  .add-box {
+    padding: 16px;
+  }
+  li {
+    padding: 10px;
+  }
+  li button {
+    margin: 4px 2px;
+  }
+}
