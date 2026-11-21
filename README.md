@@ -13,6 +13,7 @@ I sat at my computer for too long, but I appreciate your willingness to grade th
 
 ## The Adventurer's Handbook
 
+
 ## About my project
 
 The Adventurer's Handbook is a beginner-friendly D&D topic library.
@@ -23,6 +24,10 @@ my head, so I have made pretty good modifications, but much more simple.
 
 I used the CRUD starter, I made changes to customize project. I added a category 
 box, and updated the database and use JavaScript.
+
+## Netlify URL
+
+https://signsmcmurtry128.netlify.app/
 
 ## Features
 
@@ -70,6 +75,8 @@ As you know it is an internal identifier.
 Connecting the database servers were also a huge pain for me, I really struggled with that. 
 
 I had to play around with the code, come things were defininetly easy to know what to put, but there were others that I had to look up because I was so confused on what I was doing wrong. 
+
+
 
 
 # CRUD Starter
