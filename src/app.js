@@ -65,7 +65,7 @@ async function addItem() {
 // This section was tricky because I had not added .trim() to the category, just
 // Copied the newTitle section. News flash, did not work
 async function editItem(id) {
-  const newTitle = prompt("Enter the new topic name:");
+  const newTitle = prompt("Enter a new topic and then select category: ");
 
   if (newTitle === null || newTitle === "") {
     return;
