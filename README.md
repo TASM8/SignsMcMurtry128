@@ -8,7 +8,7 @@
 Before I go into detail what I made, this final.... was not my favorite.
 It may have been better if I was in Database, but I have not taken that class in 
 3 years. So, did I think I was going to have an brain aneurysm? Yes. 
-Is part of that my fault because I need to complete this class early? Yes. 
+Is part of that my fault because I need/want to complete this class early? Yes. 
 I sat at my computer for too long, but I appreciate your willingness to grade this, thank you, I really do appreciate it!
 
 ## The Adventurer's Handbook

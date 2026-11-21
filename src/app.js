@@ -62,7 +62,7 @@ async function addItem() {
 
 
 // UPDATE: ask for a new title, then save it, also added category, needed that.
-// This section was tricky because I had not added .tim() to the category, just
+// This section was tricky because I had not added .trim() to the category, just
 // Copied the newTitle section. News flash, did not work
 async function editItem(id) {
   const newTitle = prompt("Enter the new topic name:");
@@ -88,7 +88,7 @@ async function editItem(id) {
 
 // DELETE: remove an item
 async function deleteItem(id) {
-  if (!confirm("Are you sure you want to delete this?")) {
+  if (!confirm("Are you sure you want to delete this adventurer?")) {
     return;
   }
 
